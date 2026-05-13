@@ -7,8 +7,7 @@ pipeline {
   stage('Clone Repository') { 
    steps { 
     git branch: 'main',
-        url: 'https://github.com/ayush5565/web-devops-pipeline.git',
-        credentialsId: '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' 
+        url: 'https://github.com/ayush5565/web-devops-pipeline.git'
    } 
   } 
  
