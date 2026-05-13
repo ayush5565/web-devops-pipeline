@@ -1,13 +1,11 @@
 pipeline { 
- 
  agent any 
  
  stages { 
  
   stage('Clone Repository') { 
    steps { 
-    git branch: 'main',
-        url: 'https://github.com/ayush5565/web-devops-pipeline.git'
+    git branch: 'main', url: 'https://github.com/ayush5565/web-devops-pipeline.git'
    } 
   } 
  
@@ -19,7 +17,7 @@ pipeline {
  
   stage('Run Docker Container') { 
    steps { 
-        bat 'docker run -d -p 8080:80 --name web-container web-devops-app' 
+        bat 'docker run -d -p 8081:80 --name web-container web-devops-app' 
         } 
     } 
  
