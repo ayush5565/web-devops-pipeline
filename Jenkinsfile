@@ -8,7 +8,7 @@ pipeline {
    steps { 
     git branch: 'main',
         url: 'https://github.com/ayush5565/web-devops-pipeline.git',
-        credentialsId: 'ecb6f8d6-4cd3-4976-9281-61820f45043d' 
+        credentialsId: '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' 
    } 
   } 
  
